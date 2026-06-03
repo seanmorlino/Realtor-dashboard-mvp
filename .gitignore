@@ -1,0 +1,36 @@
+node_modules/
+dist/
+dist-ssr/
+.tools/
+.pnpm-store/
+dashboard-preview.png
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env and editor state
+.env
+.env.*
+!.env.example
+*.local
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test and coverage output
+coverage/
+playwright-report/
+test-results/
+
+# Vite cache
+.vite/
