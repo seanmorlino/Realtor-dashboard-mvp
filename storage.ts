@@ -23,7 +23,13 @@ export const emptyDataSource: AppStateSnapshot["dataSource"] = {
 export function loadTasksSnapshot(): AppStateSnapshot {
   const stored = localStorage.getItem(TASKS_KEY);
   if (!stored) {
-    return { tasks: sampleTasks, dataSource: demoDataSource };
+    return {
+      tasks: [],
+      dataSource: {
+        ...emptyDataSource,
+        loadedAt: new Date().toISOString()
+      }
+    };
   }
 
   try {
@@ -33,7 +39,13 @@ export function loadTasksSnapshot(): AppStateSnapshot {
     }
     return parsed;
   } catch {
-    return { tasks: sampleTasks, dataSource: demoDataSource };
+    return {
+      tasks: [],
+      dataSource: {
+        ...emptyDataSource,
+        loadedAt: new Date().toISOString()
+      }
+    };
   }
 }
 

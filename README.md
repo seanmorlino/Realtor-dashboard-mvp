@@ -15,7 +15,8 @@ A frontend Version 1 SaaS-ready dashboard for real estate agents. The app loads 
 ## Features
 
 - React, TypeScript, Vite, and Tailwind CSS frontend.
-- Demo realtor task data on first load.
+- Empty dashboard on first load so shared Vercel links are ready for fresh data testing.
+- Demo realtor task data available from the Data Sources page.
 - Excel workbook upload for `.xlsx` and `.xls` using SheetJS.
 - Public Google Sheets and published CSV loading, including conversion of normal Google Sheets URLs to CSV export URLs when possible.
 - Due-date urgency classification for overdue, due today, due soon, upcoming, completed, and no-date tasks.
