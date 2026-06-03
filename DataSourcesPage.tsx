@@ -122,7 +122,7 @@ export function DataSourcesPage({ dataSource, onSnapshotLoaded }: DataSourcesPag
     const snapshot = clearTaskData();
     onSnapshotLoaded(snapshot);
     setErrors([]);
-    setWarnings(["Demo data cleared. Upload a workbook or load a public sheet to test fresh data."]);
+    setWarnings(["Source deleted and tasks reset."]);
     setSheetUrl("");
   }
 
@@ -249,7 +249,7 @@ export function DataSourcesPage({ dataSource, onSnapshotLoaded }: DataSourcesPag
             onClick={handleClearData}
           >
             <Trash2 className="h-4 w-4" aria-hidden="true" />
-            Clear loaded data
+            Delete source / reset tasks
           </button>
         </section>
       </aside>

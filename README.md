@@ -22,7 +22,7 @@ A frontend Version 1 SaaS-ready dashboard for real estate agents. The app loads 
 - Due-date urgency classification for overdue, due today, due soon, upcoming, completed, and no-date tasks.
 - Dashboard metrics, urgent task panel, full task table, filters, sorting, and responsive sidebar navigation.
 - Data source page with upload/link loading, source status, parsing errors, and expected column guidance.
-- Clear loaded data from the Data Sources page when you want a blank dashboard for fresh testing.
+- Delete the current source and reset tasks from the Data Sources page when you want a blank dashboard for fresh testing.
 - Settings page for urgent/upcoming windows, business name, and user name.
 - LocalStorage persistence for tasks, loaded source details, and settings.
 
